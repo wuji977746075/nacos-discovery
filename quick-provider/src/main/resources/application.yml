@@ -1,5 +1,5 @@
 server:
-  port: 56010
+  port: ${port:56010}
 
 spring:
   application:
@@ -8,6 +8,8 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+        namespace: a183ed00-0100-4c90-be69-06454325101c
+        cluster-name: DEFAULT
 
 logging:
   level:

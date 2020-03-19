@@ -1,0 +1,32 @@
+server:
+  port: ${port:56040}
+
+spring:
+  application:
+    name: service2
+  main:
+    allow-bean-definition-overriding: true #sb2.1需要设定
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: a183ed00-0100-4c90-be69-06454325101c
+        cluster-name: DEFAULT
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: a183ed00-0100-4c90-be69-06454325101c
+        group: NACOS_MICROSERVICE_GROUP #xxx业务
+
+dubbo:
+  scan:
+    base-packages: com.rainbow.microservice
+  protocol:
+    name: dubbo
+    port: ${dubbo_port:20891}
+  registry:
+    address: nacos://127.0.0.1:8848
+  application:
+    qos-enable: false #dubbo运维服务是否开启
+  consumer:
+    check: false #启动就检查依赖的服务
