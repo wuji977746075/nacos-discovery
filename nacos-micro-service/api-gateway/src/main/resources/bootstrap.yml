@@ -1,0 +1,19 @@
+server:
+  port: 56010
+
+spring:
+  application:
+    name: api-gateway
+  main:
+    allow-bean-definition-overriding: true #sb2.1需要设定
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: a183ed00-0100-4c90-be69-06454325101c
+        cluster-name: DEFAULT
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: a183ed00-0100-4c90-be69-06454325101c
+        group: NACOS_MICROSERVICE_GROUP #xxx业务

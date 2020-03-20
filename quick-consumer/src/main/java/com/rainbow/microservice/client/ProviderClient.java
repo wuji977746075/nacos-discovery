@@ -1,4 +1,4 @@
-package com.rainbow.nacos.client;
+package com.rainbow.microservice.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

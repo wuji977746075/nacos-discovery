@@ -1,8 +1,6 @@
-package com.rainbow.nacos.controller;
+package com.rainbow.microservice.controller;
 
-import com.rainbow.nacos.client.ProviderClient;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.rainbow.microservice.client.ProviderClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

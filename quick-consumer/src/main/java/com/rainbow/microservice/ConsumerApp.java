@@ -1,4 +1,4 @@
-package com.rainbow.nacos;
+package com.rainbow.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
