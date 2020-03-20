@@ -19,3 +19,8 @@ spring:
         file-extension: yaml
         namespace: a183ed00-0100-4c90-be69-06454325101c
         group: NACOS_MICROSERVICE_GROUP #xxx业务
+    sentinel:
+      transport:
+        port: 9999 #和控制台交流的端口
+        dashboard: localhost:8000
+
